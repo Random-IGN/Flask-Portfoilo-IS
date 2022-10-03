@@ -8,6 +8,7 @@ services:
               volumes:
                       - persistent_volume:/app/volumes
 volumes:
+  type: mapping
 persistent_volume:
   driver: local
   driver_opts:
