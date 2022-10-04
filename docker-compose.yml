@@ -8,12 +8,11 @@ services:
               volumes:
                       - persistent_volume:/app/volumes
 volumes:
-  type: mapping
 persistent_volume:
   driver: local
   driver_opts:
     o: bind
     type: none
-    device: /home/ubuntu/Flask-Portfoilo/volumes
+    device: /home/ubuntu/Flask-Portfoilo-IS/volumes
     
     # replace just flask_portfolio
